@@ -20,16 +20,5 @@
       "Diesel500": 1373,
       "InfiniaDiesel": 1543
     }
-  },
-  {
-    "name": "YPF RN9 ROSARIO (CONTINGENCIA)",
-    "lat": -32.9511,
-    "lng": -60.6664,
-    "prices": {
-      "Super": 1210,
-      "Infinia": 1450,
-      "Diesel500": 1235,
-      "InfiniaDiesel": 1465
-    }
   }
 ]
