@@ -1,0 +1,33 @@
+name: Automatizacion Surtidores YPF
+on:
+  schedule:
+    - cron: '0 6 * * *' # Se ejecuta de forma automática todos los días a las 06:00 UTC (03:00 AM Argentina)
+  workflow_dispatch: # Te permite ejecutarlo manualmente con un botón cuando tú quieras
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Otorga permisos al subagente para escribir el nuevo JSON en tu repositorio
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar entorno Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar libreria de red
+        run: pip install requests
+
+      - name: Ejecutar Subagente de Extraccion
+        run: python extraer.py
+
+      - name: Guardar y subir cambios a la nube de GitHub
+        run: |
+          git config --global user.name "Subagente Logistico"
+          git config --global user.email "logistica@actions.com"
+          git add precios.json
+          git commit -m "Base YPF actualizada automaticamente por el servidor" || exit 0
+          git push
