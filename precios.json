@@ -1,0 +1,35 @@
+[
+  {
+    "name": "YPF ACA CABA (CONTINGENCIA)",
+    "lat": -34.5805,
+    "lng": -58.4065,
+    "prices": {
+      "Super": 1184,
+      "Infinia": 1403,
+      "Diesel500": 1190,
+      "InfiniaDiesel": 1374
+    }
+  },
+  {
+    "name": "YPF RN11 FORMOSA (CONTINGENCIA)",
+    "lat": -26.1848,
+    "lng": -58.1731,
+    "prices": {
+      "Super": 1349,
+      "Infinia": 1577,
+      "Diesel500": 1373,
+      "InfiniaDiesel": 1543
+    }
+  },
+  {
+    "name": "YPF RN9 ROSARIO (CONTINGENCIA)",
+    "lat": -32.9511,
+    "lng": -60.6664,
+    "prices": {
+      "Super": 1210,
+      "Infinia": 1450,
+      "Diesel500": 1235,
+      "InfiniaDiesel": 1465
+    }
+  }
+]
