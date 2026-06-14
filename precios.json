@@ -1,13 +1,1 @@
-[
-  {
-    "name": "YPF CONTINGENCIA",
-    "lat": -34.5,
-    "lng": -58.4,
-    "prices": {
-      "Super": 1000,
-      "Infinia": 1200,
-      "Diesel500": 1050,
-      "InfiniaDiesel": 1250
-    }
-  }
-]
+[]
